@@ -11,12 +11,16 @@ void CSelect::Select()
 {
 
 
+    static int count;
 
-    Stu s ;
+
+
     ifstream  afile;
-    afile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\student.txt", ios::in | ios :: binary );
+    afile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt", ios::in | ios :: binary );
 
+    int i = 0;
     int n = 0;
+    int k = 0;
     int flag=0;
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t";
     cout<<"ENTER YOUR STUDENT NUMBER: ";
@@ -30,18 +34,21 @@ void CSelect::Select()
     {
 
 
-        while(afile.read((char*)&s,sizeof(s)))
+        for (i=0;i =count;i ++)
+//        while(afile.read((char*)&st,sizeof(st)))
         {
 
-            if(n==s.num)
+            if(n==st[i].num)
             {
 
 
                 flag=1;
+                k = i;
                 cout<<"查询中";
-                cout << s.num << s.name;
+
 //                ss.Display_report(n);
             }
+            cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address;
         }
         if(flag==0)
         {

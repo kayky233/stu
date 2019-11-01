@@ -10,12 +10,11 @@ using namespace std;
 #include "select.h"
 #include "update.h"
 
-extern struct Stu st[100];
-extern ofstream outfile;
+struct Stu st[100];
+ofstream outfile;
 
-
-extern int tag;
-extern int ftag;
+int tag = 0;
+int ftag =0;
 
 int main(void)
 {

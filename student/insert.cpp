@@ -13,9 +13,11 @@ void CInsert::Insert(void)
 
 
 
-    struct Stu st[100];
+
+
 
     int n,i;
+
 
     cout << "n =";
     cin >> n;
@@ -23,9 +25,10 @@ void CInsert::Insert(void)
 
     // 以写模式打开文件
     ofstream outfile;
-    outfile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt",ios::out |  ios :: app);
-    for (i =0;i< n;i ++)
+    outfile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt",ios::out |  ios :: app );
+    for (i =tag;i<tag+n;i ++)
     {
+
 
 
 
@@ -33,25 +36,37 @@ void CInsert::Insert(void)
     cout << "Writing to the file" << endl;
 
     cout<<"\t\t Student'S id          : ";
-    cin >>st[i].num;
+
+    cin >> st[i].num;
+
+
 
     cout<<"\t\t Student'S NAME          : ";
-    cin >>st[i].name;
+    cin >> st[i].name;
+
 
     cout<<"\t\t Student'S gender          : ";
-    cin >>st[i].gender;
+    cin >> st[i].gender;
+
 
     cout<<"\t\t Student'S phone          : ";
-    cin >>st[i].phone;
+    cin >> st[i].phone;
+
 
     cout<<"\t\t Student'S sddress          : ";
-    cin >>st[i].address;
+    cin >> st[i].address;
+
+    outfile <<st[i].num <<"\t"<<st[i].name<<"\t"<<st[i].gender<<"\t"<<st[i].phone<<"\t"<<st[i].address<<endl;
 
 
 
-    outfile.write((char*)&st[i],sizeof(st[i]));
+
+
+
 
     }
+    tag = tag +n;
+
 
 
 

@@ -4,6 +4,21 @@
 using namespace std;
 #include "student.h"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void CStudent::Browse(void)
 {
 

@@ -25,10 +25,11 @@ struct Stu
 };
 extern struct Stu st[100];
 extern ofstream outfile;
-
-
 extern int tag;
 extern int ftag;
+
+
+
 
 
 class CStudent
