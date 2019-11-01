@@ -11,12 +11,12 @@ void CSelect::Select()
 {
 
 
-    static int count;
+
 
 
 
     ifstream  afile;
-    afile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt", ios::in | ios :: binary );
+    afile.open("E:\\ccode\\stu\\student.txt", ios::in | ios :: binary );
 
     int i = 0;
     int n = 0;
@@ -34,7 +34,7 @@ void CSelect::Select()
     {
 
 
-        for (i=0;i =count;i ++)
+        for (i=0;i =tag;i ++)
 //        while(afile.read((char*)&st,sizeof(st)))
         {
 

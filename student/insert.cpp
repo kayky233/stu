@@ -25,7 +25,7 @@ void CInsert::Insert(void)
 
     // 以写模式打开文件
     ofstream outfile;
-    outfile.open("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt",ios::out |  ios :: app );
+    outfile.open("E:\\ccode\\stu\\student.txt",ios::out |  ios :: app );
     for (i =tag;i<tag+n;i ++)
     {
 

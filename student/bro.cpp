@@ -19,7 +19,7 @@ void CBro::Browse(void)
 
 
 
-    ifstream infile("E:\\ccode\\gerrit-repos\\demo\\stumg\\stumanage\\student.txt",ios :: in |ios :: binary);
+    ifstream infile("E:\\ccode\\stu\\student.txt",ios :: in |ios :: binary);
     if(!infile)
     {
         cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tFILE NOT FOUND!";
