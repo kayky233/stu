@@ -2,6 +2,7 @@
 #include <fstream>
 #include <stdio.h>
 
+
 using namespace std;
 #include "select.h"
 #include "student.h"
@@ -16,10 +17,12 @@ void CSelect::Select()
 
 
     ifstream  afile;
-    afile.open("E:\\ccode\\stu\\student.txt", ios::in | ios :: binary );
+    afile.open("E:\\ccode\\stu\\student.txt", ios::in);
+    ifstream statusfile("E:\\ccode\\stu\\status.txt",ios :: in );
+    statusfile >> tag;
 
-    int i = 0;
-    int n = 0;
+    int i;
+    int n;
     int k = 0;
     int flag=0;
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t";
@@ -34,29 +37,47 @@ void CSelect::Select()
     {
 
 
-        for (i=0;i =tag;i ++)
-//        while(afile.read((char*)&st,sizeof(st)))
+        loop:for (i;i <tag;++i)
+
         {
-
-            if(n==st[i].num)
-            {
+               afile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
 
 
-                flag=1;
-                k = i;
-                cout<<"查询中";
+
+               if(st[i].num==n)
+               {
+
+
+                    flag=1;
+                    k = i;
+                    goto stop;
+
 
 //                ss.Display_report(n);
-            }
-            cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address;
-        }
-        if(flag==0)
-        {
+                }
+                if(st[i].num!=n)
 
-            cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
-            cout<<"\n\n\n\n\n\n\n\n";
+
+
+                {
+
+                    goto loop;
+                }
+            stop:
+            cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address<<endl;
+            if(flag==0)
+            {
+
+               cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
+               cout<<"\n\n\n\n\n\n\n\n";
+            }
+            cout<<"select sucess"<<endl;
         }
+
     }
     afile.close();
+    statusfile.close();
+
+
 }
 

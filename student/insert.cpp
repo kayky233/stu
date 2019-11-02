@@ -80,8 +80,4 @@ void CInsert::Insert(void)
     outstatusfile.close();
     instatusfile.close();
 }
-//char num[20];//student id
-//char name[20];
-//char gender[4];
-//float phone[20];
-//char address[100];
+

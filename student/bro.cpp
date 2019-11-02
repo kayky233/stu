@@ -41,14 +41,7 @@ void CBro::Browse(void)
 
                infile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
                cout << st[i].num<<"\t"<< st[i].name<<"\t"<< st[i].gender<<"\t"<< st[i].phone<<"\t"<< st[i].address<<endl;
-//               infile >> st[i].num;
-//               cout << st[i].num;
-//               infile >> st[i].phone;
-//               cout << st[i].phone;
-//               infile >> st[i].gender;
-//               cout << st[i].gender;
-//               infile >> st[i].address;
-//               cout << st[i].gender;
+
 
 
             }
@@ -56,12 +49,6 @@ void CBro::Browse(void)
 
 
 
-//        while(infile.read((char *)&s,sizeof (s)))
-
-//        {
-
-//            cout <<s.num << "   "<<s.name << "   "<<s.phone << "   "<<s.gender << "   "<< s.address <<endl;
-//        }
 
        infile.close();
        statusfile.close();
@@ -70,6 +57,6 @@ void CBro::Browse(void)
 
 
 }
-//}
+
 
 
