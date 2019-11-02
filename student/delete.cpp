@@ -57,6 +57,7 @@ void CDelete::Del(void)
 
                 {
                         i++;
+                        tag--;
 
 
                         flag=1;
@@ -71,10 +72,11 @@ void CDelete::Del(void)
                cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
                cout<<"\n\n\n\n\n\n\n\n";
             }
-            cout<<"delete sucess"<<endl;
+
         }
 
     }
+    cout<<"delete sucess"<<endl;
     afile.close();
     statusfile.close();
     f2.close();
@@ -88,48 +90,3 @@ void CDelete::Del(void)
 
 
 
-
-//    Stu s;
-//    ifstream f1("E:\\ccode\\stu\\student.txt",ios :: in);
-//    ofstream f2("E:\\ccode\\stu\\temp.txt",ios :: out);
-//    int n,flag=0;
-//    if(!f1)
-//    {
-//        cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tFILE NOT FOUND!";
-//        cout<<"\n\n\n\n\n\n\n\n";
-//    }
-//    else
-//    {
-//        cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t";
-//        cout<<"ENTER THE  THE STUDENT NUMBER: ";
-//        cin>>n;
-//        system("cls");
-
-
-
-//        while(f1.read((char*)&s,sizeof(s)))
-//        {
-//            if(n!=s.num)
-//            {
-//                f2.write((char*)&s,sizeof(s));
-//                flag=1;
-//            }
-//        }
-//        if(flag==0)
-//        {
-//            cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
-//            cout<<"\n\n\n\n\n\n\n\n";
-//        }
-//        else
-//        {
-//             cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t";
-//             cout<<"THE student WAS DELETED SUCCESSFULLY";
-//             cout<<"\n\n\n\n\n\n\n\n";
-//        }
-//    }
-//    f1.close();
-//    f2.close();
-//    remove("student.dat");
-//    rename("temp.txt","student.dat");
-
-//}
