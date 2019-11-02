@@ -16,7 +16,7 @@ void CDelete::Del(void)
 
     int i;
     int n;
-    int k = 0;
+
     int flag=0;
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t";
     cout<<"ENTER YOUR STUDENT NUMBER: ";
@@ -30,10 +30,10 @@ void CDelete::Del(void)
     {
 
 
-        loop:for (i;i <tag;++i)
+        for (i=0;i <tag;)
 
         {
-               afile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
+                afile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
 
 
 
@@ -46,22 +46,23 @@ void CDelete::Del(void)
                         f2 <<st[i].num <<"\t"<<st[i].name<<"\t"<<st[i].gender<<"\t"<<st[i].phone<<"\t"<<st[i].address<<endl;
 
                         flag=1;
+                        i++;
 
 
-                    goto loop;
+
                 }
                 if(st[i].num==n)
 
 
 
                 {
-
+                        i++;
 
 
                         flag=1;
 
 
-                    goto loop;
+
                 }
 
             if(flag==0)
@@ -77,8 +78,8 @@ void CDelete::Del(void)
     afile.close();
     statusfile.close();
     f2.close();
-    remove("student.txt");
-    rename("temp.txt","student.txt");
+    remove("E:\\ccode\\stu\\student.txt");
+    rename("E:\\ccode\\stu\\temp.txt","E:\\ccode\\stu\\student.txt");
 
 }
 
