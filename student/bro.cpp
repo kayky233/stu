@@ -12,14 +12,16 @@ void CBro::Browse(void)
 
     int i;
     i = 0;
-    char str[80];
 
 
 
 
 
 
-    ifstream infile("E:\\ccode\\stu\\student.txt",ios :: in |ios :: binary);
+
+    ifstream infile("E:\\ccode\\stu\\student.txt",ios :: in );
+    ifstream statusfile("E:\\ccode\\stu\\status.txt",ios :: in );
+    statusfile >> tag;
     if(!infile)
     {
         cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tFILE NOT FOUND!";
@@ -33,10 +35,10 @@ void CBro::Browse(void)
         cout << "Reading from the file" << endl;
 
 
-        for (i = 0;i <tag;i++)
+        for (i = 0;i<tag;++i)
 
             {
-               infile >> str;
+
                infile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
                cout << st[i].num<<"\t"<< st[i].name<<"\t"<< st[i].gender<<"\t"<< st[i].phone<<"\t"<< st[i].address<<endl;
 //               infile >> st[i].num;
@@ -62,6 +64,7 @@ void CBro::Browse(void)
 //        }
 
        infile.close();
+       statusfile.close();
 
 
 

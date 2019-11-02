@@ -26,6 +26,11 @@ void CInsert::Insert(void)
     // 以写模式打开文件
     ofstream outfile;
     outfile.open("E:\\ccode\\stu\\student.txt",ios::out |  ios :: app );
+    ofstream outstatusfile;
+    outstatusfile.open("E:\\ccode\\stu\\status.txt",ios::out);
+    ifstream instatusfile;
+    instatusfile.open("E:\\ccode\\stu\\status.txt", ios :: in);
+    instatusfile >> tag;
     for (i =tag;i<tag+n;i ++)
     {
 
@@ -63,15 +68,17 @@ void CInsert::Insert(void)
 
 
 
-
     }
     tag = tag +n;
 
+    outstatusfile <<tag <<endl;
 
 
 
 
     outfile.close();
+    outstatusfile.close();
+    instatusfile.close();
 }
 //char num[20];//student id
 //char name[20];

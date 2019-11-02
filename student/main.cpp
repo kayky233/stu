@@ -13,8 +13,8 @@ using namespace std;
 struct Stu st[100];
 ofstream outfile;
 
-int tag = 0;
-int ftag =0;
+int tag;
+int ftag;
 
 int main(void)
 {
