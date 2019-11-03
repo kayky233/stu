@@ -3,10 +3,10 @@
 #include "bro.h"
 #include "insert.h"
 #include "select.h"
-#include "display_report.h"
+
 #include "delete.h"
 #include "update.h"
-#include "enter.h"
+
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
@@ -53,10 +53,10 @@ private:
     CBro            m_Bro;//m:member
     CInsert         m_Insert;
     CSelect         m_Select;
-    CDisplay_report m_Display;
+
     CDelete         m_Del;
     CUpdate         m_Upd;
-    CEnter          m_Enter;
+
 
 
 

@@ -37,7 +37,7 @@ void CSelect::Select()
     {
 
 
-        for (i;i <tag;++i)
+        for (i;i <tag;)
 
         {
                afile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
@@ -45,28 +45,36 @@ void CSelect::Select()
 
 
                if(st[i].num==n)
-               {
+                  {
 
 
                     flag=1;
                     k = i;
-                    goto stop;
+                    cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address<<endl;
+                    cout<<"select sucess"<<endl;
+                    break;
 
 
-//                ss.Display_report(n);
-                }
+
+
+                  }
+               else
+                  {
+                   i = i +1;
+
+                  }
 
 
         }
-        stop:
-        cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address<<endl;
+
+
         if(flag==0)
         {
 
             cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
             cout<<"\n\n\n\n\n\n\n\n";
         }
-        cout<<"select sucess"<<endl;
+
 
     }
     afile.close();

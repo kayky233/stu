@@ -48,15 +48,5 @@ void CStudent::Update(void)
 
     m_Upd.Update();
 }
-void CStudent::Enter(void)
-{
 
 
-    m_Enter.Enter();
-}
-//int CStudent::Display_report(int a)
-//{
-
-
-//    m_Display.Display_report(int a);
-//}

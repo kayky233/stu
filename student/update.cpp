@@ -13,7 +13,7 @@ void CUpdate::Update(void)
     statusfile >> tag;
     ofstream f2("E:\\ccode\\stu\\temp.txt",ios :: out);
 
-    int i;
+    int i=0;
     int n;
 
     int flag=0;
@@ -29,7 +29,7 @@ void CUpdate::Update(void)
     {
 
 
-        for (i=0;i <tag;)
+        loop:for (;i <tag;)
 
         {
                 afile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
@@ -46,11 +46,12 @@ void CUpdate::Update(void)
 
                         flag=1;
                         i++;
+                       goto loop;
 
 
 
                 }
-                if(st[i].num==n)
+                else
 
 
 
@@ -88,17 +89,13 @@ void CUpdate::Update(void)
 
                     flag=1;
                     i++;
+                    goto loop;
 
 
 
                 }
 
-            if(flag==0)
-            {
 
-               cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tstudent NOT FOUND!";
-               cout<<"\n\n\n\n\n\n\n\n";
-            }
 
         }
 
@@ -110,13 +107,3 @@ void CUpdate::Update(void)
     remove("E:\\ccode\\stu\\student.txt");
     rename("E:\\ccode\\stu\\temp.txt","E:\\ccode\\stu\\student.txt");
 }
-
-
-
-
-
-
-
-
-
-

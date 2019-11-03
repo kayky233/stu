@@ -6,8 +6,6 @@ CONFIG -= qt
 SOURCES += \
         bro.cpp \
         delete.cpp \
-        display_report.cpp \
-        enter.cpp \
         insert.cpp \
         main.cpp \
         select.cpp \
@@ -17,8 +15,6 @@ SOURCES += \
 HEADERS += \
     bro.h \
     delete.h \
-    display_report.h \
-    enter.h \
     insert.h \
     select.h \
     student.h \

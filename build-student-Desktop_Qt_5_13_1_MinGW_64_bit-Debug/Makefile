@@ -211,6 +211,7 @@ Makefile: ../student/student.pro ../../../qt/5.13.1/mingw73_64/mkspecs/win32-g++
 		../../../qt/5.13.1/mingw73_64/mkspecs/features/qt_config.prf \
 		../../../qt/5.13.1/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../../qt/5.13.1/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../qt/5.13.1/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../../qt/5.13.1/mingw73_64/mkspecs/features/toolchain.prf \
 		../../../qt/5.13.1/mingw73_64/mkspecs/features/default_pre.prf \
@@ -378,6 +379,7 @@ Makefile: ../student/student.pro ../../../qt/5.13.1/mingw73_64/mkspecs/win32-g++
 ../../../qt/5.13.1/mingw73_64/mkspecs/features/qt_config.prf:
 ../../../qt/5.13.1/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../../qt/5.13.1/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../qt/5.13.1/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../../qt/5.13.1/mingw73_64/mkspecs/features/toolchain.prf:
 ../../../qt/5.13.1/mingw73_64/mkspecs/features/default_pre.prf:
