@@ -50,8 +50,11 @@ void CSelect::Select()
 
                     flag=1;
                     k = i;
-                    cout << st[k].num << st[k].name<<st[k].phone<<st[k].gender<<st[k].address<<endl;
-                    cout<<"select sucess"<<endl;
+                    cout << "\t\t\tstudent number"<<"\t"<< "student name"<<"\t"<< "student gender"<<"\t"<< "student phone"<<"\t"<< "student adress"<<endl;
+
+                    cout <<"\t\t\t"<< st[k].num<<"\t\t"<< st[k].name<<"\t\t"<< st[k].gender<<"\t\t"<< st[k].phone<<"\t\t"<< st[k].address<<endl;
+
+
                     break;
 
 

@@ -29,10 +29,12 @@ void CBro::Browse(void)
     }
     else
     {
-        cout<<"\t\t\t  ---------------------------"<<"\n";
-        cout<<"\t\t\t     LIST OF CLASS STUDENTS"<<"\n";
-        cout<<"\t\t\t  ---------------------------"<<"\n\n";
-        cout << "Reading from the file" << endl;
+        cout<<"\n\n\n\n\n\n";
+        cout<<"\t\t\t  ---------------------------"<<endl;
+        cout<<"\t\t\t     LIST OF CLASS STUDENTS"<<endl;
+        cout<<"\t\t\t  ---------------------------"<<endl;
+        cout<<"\t\t\t  Reading from the file" <<"\n\n"<< endl;
+        cout << "\t\t\tstudent number"<<"\t"<< "student name"<<"\t"<< "student gender"<<"\t"<< "student phone"<<"\t"<< "student adress"<<endl;
 
 
         for (i = 0;i<tag;++i)
@@ -40,7 +42,7 @@ void CBro::Browse(void)
             {
 
                infile >> st[i].num >> st[i].name >> st[i].gender>> st[i].phone >> st[i].address;
-               cout << st[i].num<<"\t"<< st[i].name<<"\t"<< st[i].gender<<"\t"<< st[i].phone<<"\t"<< st[i].address<<endl;
+               cout <<"\t\t\t"<< st[i].num<<"\t\t"<< st[i].name<<"\t\t"<< st[i].gender<<"\t\t"<< st[i].phone<<"\t\t"<< st[i].address<<endl;
 
 
 

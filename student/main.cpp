@@ -26,17 +26,17 @@ int main(void)
 
      system("cls");
      cout<<"\n\n\n\n\n\n";
-     cout<<"\t\t\t\t  ------------"<<"\n";
-     cout<<"\t\t\t\t      MENU"<<"\n";
-     cout<<"\t\t\t\t  ------------"<<"\n";
-     cout<<"\t\t\t     1. Browse Student info"<<"\n";
-     cout<<"\t\t\t     2. Insert Student info"<<"\n";
-     cout<<"\t\t\t     3. Select Student info"<<"\n";
-     cout<<"\t\t\t     4. Delete Student info"<<"\n";
-     cout<<"\t\t\t     5. Update Student info"<<"\n";
+     cout<<"\t\t\t\t--------------------------------------"<<"\n";
+     cout<<"\t\t\t\t***  Student Info Manage Program   ***"<<"\n";
+     cout<<"\t\t\t\t--------------------------------------"<<"\n"<<endl;
+     cout<<"\t\t\t\t     1. Browse Student info"<<"\n"<<endl;
+     cout<<"\t\t\t\t     2. Insert Student info"<<"\n"<<endl;
+     cout<<"\t\t\t\t     3. Select Student info"<<"\n"<<endl;
+     cout<<"\t\t\t\t     4. Delete Student info"<<"\n"<<endl;
+     cout<<"\t\t\t\t     5. Update Student info"<<"\n"<<endl;
 
-     cout<<"\t\t\t     6. GO TO MAIN MENU"<<"\n\n";
-     cout<<"\t\t\t     ENTER YOUR OPTION: ";
+
+     cout<<"\t\t\t\t     Please select the choice: "<<endl;
      cin>>n;
      system("cls");
      switch(n)

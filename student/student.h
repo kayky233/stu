@@ -18,7 +18,7 @@ struct Stu
     bool delTag;//删除标志
 
     char name[20];
-    char gender[4];
+    char gender[10];
     char phone[20];
     char address[100];
     int num;//student id
